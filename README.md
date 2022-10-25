@@ -1,2 +1,3 @@
 # cursofrontend
-atualizar arquivo
+## Git Flow
+Fluxo do Git 
