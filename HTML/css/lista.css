@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+body {
+	background-color: skyblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+h2 {
+	font-size: 1rem;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  padding-top: 5px;
+  
+}
+
+ul{
+  padding: 5px;
+  font-size: 1rem;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  padding: 5px;
+  background-color: skyblue;
+}
+
+nav ul {
+  padding: 5px;
+  list-style-position: inside;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+}
+
+.estados {
+  padding-bottom: 5px;
+  list-style-type: circle;
+  list-style-position: inside;
+ 
+  
+
+}
+.capital {
+  padding-left: 20px;
+  padding-top: 5px;
+  list-style: none;
+ 
+}
+
+.país {
+  padding-bottom: 5px;
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left: 5px;
+  list-style-type: disc;
+
+}
+
+ol{
+  padding: auto;
+}
+
+.times{
+  padding-bottom: 5px;
+  padding-left: 10px;
+  list-style-type: decimal;
+  list-style-position: inside;
+  
+}
+
+dl {
+  padding-bottom: 5px;
+  padding-left: 5px;
+  list-style-type: circle;
+  list-style-position: inside;
+  
+}
+
+.aparelho {
+  font-size: 1rem;
+  text-decoration: solid;
+    
+}
+.modelo {
+  list-style-type: decimal;
+  padding-left: 10px;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 769px) {
+  body {
+    background-color: teal;
+    color: #fff;
+
+  }
+
+  p,h3,li,a{
+    color: whitesmoke;
+  }
+  
+}
+
+@media (max-width: 768PX) {
+  nav, 
+  ul {
+    width: 30vw;
+    overflow: scroll;
+    
+  }
+ 
+  .aparelho,
+  .modelo,
+  .times,
+  .país,
+  .estados,
+  .capital{
+    width: 50vw;
+    min-width: unset;
+    background-color: burlywood;
+  }
+
+  h1,
+  h2 {
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+  }
+}  
+/*  Smartphone */
+
+@media (max-width: 425px) {
+  nav,
+  ul {
+    width: 100%;
+    min-width: 320px;
+    background-color: beige;
+
+  }
+}
+

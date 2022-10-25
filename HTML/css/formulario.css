@@ -1,0 +1,166 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+body {
+	background-color: skyblue;
+}
+
+h1 {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(18, 60, 95);  
+}
+
+.pergunta {
+    color: black;
+    text-decoration: solid;
+    text-decoration: underline;
+    text-align: left;
+}
+
+
+h2 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+form {
+    padding: 10px;
+}
+
+form div {
+	background: white;
+	border-bottom: 1px solid #33f;
+	margin: 1rem;
+	padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px rgba (0,0,0, 0.2);
+    text-shadow: 1px 1px 1px rgba (0, 0, 0,0.2);
+    
+}
+
+label {
+	margin-bottom: 1rem;
+	font-size: 1.4rem; 
+	font-family: sans-serif;
+	font-weight: bold;
+	color: rgb(68, 168, 250);
+}
+
+input {
+	padding: 1rem;
+}
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
+}
+
+header {
+  background-color: steelblue;
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  padding: 20px;
+  background-color: skyblue;
+}
+
+nav ul {
+  list-style-type:circle;
+  padding: 5px;
+  list-style-position: inside;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 50%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.links {
+    font-size: 20px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+@media (min-width: 769px) {
+	body {
+	  background-color: teal;
+	  color: #fff;
+  
+	}
+  
+	p, h1,h2,h3,h4,h5,h6,a{
+	  color: whitesmoke;
+	}
+	
+  }
+  
+  @media (max-width: 768PX) {
+    nav {
+      width: 30vw;
+    }
+    article {
+      width: 70vw;
+  
+	}
+	
+   
+  }  
+  /*  Smartphone */
+  
+  @media (max-width: 425px) {
+	body{
+	  width: 100%;
+	  min-width: 320px;
+	  ;
+	}
+   
+  article {
+  width: 100%;
+  height: auto;
+  background-color: aqua;
+  }
+}
