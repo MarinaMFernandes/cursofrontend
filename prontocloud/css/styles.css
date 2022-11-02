@@ -118,6 +118,10 @@ section article{
 
 }
 
+.cog-embed-script{
+    visibility: hidden !important;
+}
+
 footer{
     background-color: rgb(7, 7, 61);
     color: #fff;
