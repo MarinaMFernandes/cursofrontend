@@ -14,6 +14,7 @@ body{
 .main-container {
     background: #fff;
     max-width: 100vw;
+    
         
 }
 .container {
@@ -32,6 +33,7 @@ header{
     width: 100%;
     padding: 20px;
     border-bottom: 1px solid #254159;
+    text-align: center;
 
 }
 h1{
@@ -63,6 +65,7 @@ h4 {
 p{
     margin-bottom: 10px;
     line-height: 1.4;
+    padding: 5px;
 
 }
 
@@ -73,13 +76,10 @@ img {
 
 #tenhointeresse {
     width: 100%;
-    background-color: #a4ccf5;
+    background-color: #ffffff;
+    margin-bottom: auto;
 }
 
-#tenhointeresse form
-html .cog-form, :root:root:root:root:root .cog-form{
-    background-color: #a4ccf5 !important;
-}
 
 ol {
     margin-left: 30px;
@@ -87,8 +87,12 @@ ol {
 
 ol li{
     font-size: 1.4rem;
-    color: #454545;
+    color: #0b5885;
+    padding: 5px;
+    margin-bottom: 10px;
+    
 }
+
 
 section{
     font-size: 1.5rem;
@@ -136,7 +140,7 @@ section article{
 }
 
 .cognito {
-    height: 350px !important;
+    height: 400px !important;
     overflow: hidden !important;
 }
 
@@ -158,4 +162,16 @@ footer p {
 footer small{
     font-size: 80%;
     display: block;
+}
+
+@media (max-width: 425px) {
+    section nav,
+    section article {
+        width: 100%;
+    }
+
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
 }
